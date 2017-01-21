@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html ng-app="nameCalculator">
+<head>
+	<title>My First Angular App</title>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+</head>
+<body>
+	<h1>This is my first angular app - NameCalculator</h1>
+	<div ng-controller="nameCalculatorController">
+		Your name is : <input type="text" ng-model="name" ng-keyup="displayNumeric();"><br>
+		</br>
+		<div>
+			Total ASCII numeric of your name is : {{totalValue}}
+		</div>	
+	</div>
+</body>
+</html>
